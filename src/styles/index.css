@@ -1,0 +1,203 @@
+:root {
+    --color-brand-1: #9747ff;
+    --color-grey-0: #15171a;
+    --color-grey-1: #212529;
+    --color-grey-2: #2b2f33;
+    --color-grey-3: #868e96;
+    --color-grey-4: #adb5bd;
+    --color-grey-5: #ced4da;
+    --color-grey-6: #dee2e6;
+    --color-grey-7: #f1f3f5;
+    --color-grey-8: #f8f9fa;
+    --color-grey-9: #fdfeff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: var(--font-1);
+   
+  }
+  
+  header button {
+    font-size: var(--font-2);
+    background-color: var(--color-grey-7);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+  }
+
+  .albums-section {
+    padding: 40px;
+  }
+  
+  .album-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .album-card .album-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+
+  .album-card {
+    background-color: var(--color-grey-7);
+    border-radius: var(--radius-1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .album-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-1);
+    margin-bottom: 10px;
+  }
+  
+  .album-card h3 {
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+    margin: 40px 10px 10px 10px; 
+  }
+
+  .album-info .album-price {
+    font-size: var(--font-3);
+    color: var(--color-grey-0);
+    margin: 10px 0; /* Adiciona espaçamento ao preço */
+  }
+  
+
+  
+  .album-card .band {
+    font-size: var(--font-3);
+    color: var(--color-grey-0);
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .album-card p {
+    font-size: var(--font-3);
+    color: var(--color-grey-0);
+    margin: 0;
+    margin-bottom: auto;
+    margin: 10px;
+  }
+
+  .album-card button {
+    font-size: var(--font-2);
+    background-color: var(--color-grey-6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    align-self: flex-end; 
+  }
+  
+  
+  .genre-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+    gap: 10px;
+  }
+  
+  .genre-list li button {
+    font-size: var(--font-3);
+    color: var(--color-grey-0);
+    background-color: var(--color-grey-7);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  .genre-list li button.clicked,
+  .genre-list li button:hover {
+    background-color: var(--color-grey-1); 
+    color: var(--color-grey-9);
+  }
+
+  .filter-section{
+    padding: 20px;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  
+  filter-container h2 {
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+    margin: 0;
+  }
+  
+  .filter-container p {
+    font-size: var(--font-3);
+    color: var(--color-grey-0);
+    margin: 5px 0;
+    text-align: right;
+  }
+  
+  .filter-container p span {
+    display: inline-block;
+    margin-left: 5px; 
+  }
+  
+  .filter-container input {
+    width: 100%;
+  }
+  
+  #priceRange {
+    width: 100%;
+    background-color: var(--color-brand-1); 
+    appearance: none; 
+    height: 10px; 
+    border-radius: 5px; 
+  }
+  
+  #priceRange::-webkit-slider-thumb {
+    appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    background-color: var(--color-grey-9); 
+    border: solid 5px;
+    border-color: var(--color-brand-1);
+    border-radius: 50%; 
+    cursor: pointer;
+  }
+
+  .fas.fa-moon {
+    background-color: var(--color-grey-7); /* Adiciona uma borda cinza */
+    padding: 10px; /* Adiciona um espaçamento interno para a borda */
+  }
+
+  .dark-mode-icon img {
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+  }
+  
